@@ -1,0 +1,1 @@
+INSERT INTO `todo`.`todo` (title, content) VALUES ('Todo', 'Todo');
