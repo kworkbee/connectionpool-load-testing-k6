@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/todo?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+    username: user
+    password: password
+    hikari:
+      maximum-pool-size: 20
+  jpa:
+    hibernate:
+      ddl-auto: none
+    generate-ddl: false
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+    database: mysql
+
+logging:
+  level:
+    com.zaxxer.hikari.pool.HikariPool: debug
